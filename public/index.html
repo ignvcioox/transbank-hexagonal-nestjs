@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Webpay Hexagonal Demo</title>
+      <link rel="stylesheet" href="/css/styles.css" />
+   </head>
+
+   <body>
+      <main>
+         <h1>Webpay Plus</h1>
+         <p>NestJS + Hexagonal Architecture + Transbank</p>
+
+         <form id="payment-form">
+            <label for="amount">Amount</label>
+
+            <input id="amount" name="amount" type="number" min="1" value="1000" required />
+
+            <button id="payment-button" type="submit">Pay with Webpay</button>
+
+            <p id="payment-error" hidden></p>
+         </form>
+      </main>
+
+      <script src="scripts/payment.js"></script>
+   </body>
+</html>

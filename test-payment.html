@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Webpay Test</title>
+  </head>
+
+  <body>
+    <form
+      method="POST"
+      action="https://webpay3gint.transbank.cl/webpayserver/initTransaction"
+    >
+      <input
+        type="hidden"
+        name="token_ws"
+        value="01abf29cf2a1298ea9dfd8f9d54169de958a6460de1850382fcf058c70cf3179"
+      />
+
+      <button type="submit">Pay with Webpay</button>
+    </form>
+  </body>
+</html>
