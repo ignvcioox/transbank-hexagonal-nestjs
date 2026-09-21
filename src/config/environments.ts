@@ -15,12 +15,12 @@ export const environmentsSchema = Joi.object<EnvironmentVariables>({
    TRANSBANK_COMMERCE_CODE: Joi.string().when('TRANSBANK_ENVIRONMENT', {
       is: 'production',
       then: Joi.required(),
-      otherwise: Joi.optional(),
+      otherwise: Joi.string().allow('').optional(),
    }),
    TRANSBANK_API_KEY: Joi.string().when('TRANSBANK_ENVIRONMENT', {
       is: 'production',
       then: Joi.required(),
-      otherwise: Joi.optional(),
+      otherwise: Joi.string().allow('').optional(),
    }),
 });
 
